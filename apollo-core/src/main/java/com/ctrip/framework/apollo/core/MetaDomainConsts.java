@@ -34,7 +34,13 @@ public class MetaDomainConsts {
     domains.put(Env.LPT,
         env.getProperty("lpt_meta", prop.getProperty("lpt.meta", DEFAULT_META_URL)));
     domains.put(Env.PRO,
-        env.getProperty("pro_meta", prop.getProperty("pro.meta", DEFAULT_META_URL)));
+            env.getProperty("pro_meta", prop.getProperty("pro.meta", DEFAULT_META_URL)));
+    domains.put(Env.PROD,
+            env.getProperty("prod_meta", prop.getProperty("prod.meta", DEFAULT_META_URL)));
+    domains.put(Env.PRE,
+            env.getProperty("pre_meta", prop.getProperty("pre.meta", DEFAULT_META_URL)));
+    domains.put(Env.BETA,
+            env.getProperty("beta_meta", prop.getProperty("beta.meta", DEFAULT_META_URL)));
   }
 
   public static String getDomain(Env env) {
